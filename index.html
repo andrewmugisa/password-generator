@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang = "eng">
+
+<head>
+    <title>
+        Generate Password
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    
+    <div class="card"   >
+        
+        <div class="top">
+            <h1>Generate a <br><span id = "head" >Random password</span> </h1>
+
+            <P id="message"> Never use an insecure password again.</P>
+        </div>
+
+    
+        <div class="content">
+            
+            <div class="btn">
+                <input type="number" id="passwordLength" placeholder="password length" min="4" max="100" value="15" />
+                
+                <button id = "generateBtn">Generate passwords</button>
+            </div>
+
+
+            <div id = "passwords">
+                <div class="first">
+                    <p id = "firstPassword"></P>
+                        
+                    <button id="copyBtn1"> <img src = "icon.png"></button>
+                </div>
+                
+
+                <div class="second">
+                    <p id = "secondPassword"></P>  
+                    
+                    <button id="copyBtn2"> <img src = "icon.png"></button> 
+                </div>
+                
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <section class = alert-section>
+        <div class="alert" id="alert">
+            <p>Password Copied to clipboard</p>
+        </div>
+    </section>
+     <script src="script.js"></script>
+</body>
+
+</html>
