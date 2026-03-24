@@ -2,6 +2,9 @@
 
 A simple, secure, and open-source browser extension that generates strong passwords on demand—without storing or transmitting any data.
 
+<img width="408" height="417" alt="image" src="https://github.com/user-attachments/assets/119c9fdf-1719-4465-aff2-c06021e25219" />
+
+
 ## 🌐 Live Demo
 
 Try it here:
