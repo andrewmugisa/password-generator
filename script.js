@@ -34,7 +34,7 @@ function generatePassword() {
   firstHarshed = [];
   secondHarshed = [];
   
-  const lengthInput = parseInt(document.getElementById("passwordLength").value, 10) || 15;
+  const lengthInput = Math.min(parseInt(document.getElementById("passwordLength").value, 10) || 15, 100);
 
   for (let i = 0; i < lengthInput; i++) {
     firstHarshed.push(randomChar());
