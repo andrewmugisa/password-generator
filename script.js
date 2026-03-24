@@ -1,4 +1,4 @@
-console.log("✅✅✅ script.js loaded ✅✅✅");
+//console.log("✅✅✅ script.js loaded ✅✅✅");
 
 const characters = [
   "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
@@ -38,7 +38,6 @@ function generatePassword() {
 
   if (lengthInput > 100) {
     lengthInput = 100;
-    console.log("⚠️ Over 100 triggered");
     showAlert("Max password length is 100");
   }
 
