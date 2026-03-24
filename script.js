@@ -38,6 +38,7 @@ function generatePassword() {
 
   if (lengthInput > 100) {
     lengthInput = 100;
+    console.log("⚠️ Over 100 triggered");
     showAlert("Max password length is 100");
   }
 
