@@ -34,12 +34,16 @@ function generatePassword() {
   firstHarshed = [];
   secondHarshed = [];
   
-  const lengthInput = Math.min(parseInt(document.getElementById("passwordLength").value, 10) || 15, 100);
+  let lengthInput = parseInt(document.getElementById("passwordLength").value, 10) || 15;
+
+  if (lengthInput > 100) {
+    lengthInput = 100;
+    showAlert("Max password length is 100");
+  }
 
   for (let i = 0; i < lengthInput; i++) {
     firstHarshed.push(randomChar());
     secondHarshed.push(randomChar());
-    if(firstHarshed.length > 100){ showAlert("Max password lenght is 100")}
   }
 
   updateDisplay();
