@@ -39,7 +39,7 @@ function generatePassword() {
   for (let i = 0; i < lengthInput; i++) {
     firstHarshed.push(randomChar());
     secondHarshed.push(randomChar());
-    if(firstHarshed.lenght > 100){ showAlert("Max password lenght is 100")}
+    if(firstHarshed.length > 100){ showAlert("Max password lenght is 100")}
   }
 
   updateDisplay();
